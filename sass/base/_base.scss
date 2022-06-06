@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+*:not(i) {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  background-color: $color-bg-black-50;
+}
+
+body.hidden-scrolling {
+  overflow-y: hidden;
+}
+
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+span {
+  font-weight: bold;
+  color: $color-text-black-900;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}

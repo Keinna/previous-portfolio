@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="main.css" />
+
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <title>Portfolio website</title>
+  </head>
+  <body>
+    <!--header-->
+    <header class="header">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="header__logo">
+            <a class="header__logo-link" href="index.html">A</a>
+          </div>
+          <div class="header__hamburger-btn outer-shadow hover-in-shadow">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--Nav-->
+    <nav class="navigation">
+      <div class="navigation__close-menu outer-shadow hover-in-shadow">
+        &times;
+      </div>
+      <div class="navigation__list">
+        <ul>
+          <li class="navigation__item">
+            <a href="#home" class="navigation__link inner-shadow active"
+              >home</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="#about"
+              class="navigation__link outer-shadow hover-in-shadow"
+              >about</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="#portfolio"
+              class="navigation__link outer-shadow hover-in-shadow"
+              >portfolio</a
+            >
+          </li>
+          <li class="navigation__item">
+              <a href="#contact" class="navigation__link outer-shadow hover-in-shadow">contact</a></li> 
+        </ul>
+      </div>
+      <p class="copyright-text">&copy; 2021 by Anniek</p>
+    </nav>
+
+    <section class="home section active" id="home">
+      <!--effect wrap-->
+      <div class="effect__wrap">
+        <div class="effect--position effect-1"></div>
+
+        <div class="effect--position effect-4"></div>
+        <div class="effect--position effect-5"></div>
+      </div>
+
+      <div class="container">
+        <div class="row home__full-screen align-items-center">
+          <div class="home__intro-text">
+            <p>Hi!</p>
+            <h2>I'm Anniek</h2>
+            <h1>Front End Developer</h1>
+            <a href="#about" class="btn outer-shadow hover-in-shadow"
+              >More About Me</a
+            >
+          </div>
+          <div class="home__img">
+            <div class="home__img-box inner-shadow">
+              <img
+                src="img/Anniek.png"
+                alt="profile-picture"
+                class="outer-shadow"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about__title">
+            <h2 data-heading="main info">About me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about__img">
+            <div class="about__img-box inner-shadow">
+              <img
+                src="img/Anniek.png"
+                alt="profile-picture"
+                class="outer-shadow"
+              />
+            </div>
+
+            <div class="about__social-icon">
+              <a
+                href="https://github.com/AnniekDev"
+                class="about__social-links outer-shadow hover-in-shadow"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://linkedin.com/in/anniek-bisschop-85775940"
+                class="about__social-links outer-shadow hover-in-shadow"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="about__info-text">
+            <p>
+              Hi! My name is <span>Anniek</span>.</p>
+            <p>
+              I am an Alkmaar / Amsterdam based Front End Developer. Ever since I discovered coding, Visual Studio Code 
+              is my new best friend. I find it fascinating to see how you can turn your ideas into real projects. Because I love
+              to learn new things, becoming a Front End Developer is the best step I ever took (even though sometimes I want to throw my computer
+              out of the window). So far I have learned <span>HTML5</span>, <span>CSS3</span>, <span>SASS</span>, <span>Bootstrap 4</span>,
+              <span>Javascript</span>, <span>Node / NPM </span>, <span>Webpack</span> and took a peak at some 
+              Backend stuff. At the moment I am focusing on the
+              <span>React</span> framework and the Harvard CS50 course.
+              Please check out my portfolio or my Github account if you want to see what I have done already. 
+              
+            </p>
+            
+            <a
+              href="#contact"
+              class="btn btn-about btn--margin-right outer-shadow hover-in-shadow"
+              >Hire me</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="about__title">
+            <h2 data-heading="portfolio">My Work</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="portfolio__filter">
+            <span
+              class="portfolio__filter-item outer-shadow active"
+              data-target="all"
+              >all</span
+            >
+            <span class="portfolio__filter-item" data-target="websites"
+              >websites</span
+            >
+            <span class="portfolio__filter-item" data-target="JS-Projects"
+              >JS Projects</span
+            >
+            <span class="portfolio__filter-item" data-target="Other Projects"
+              >Other Projects</span
+            >
+          </div>
+        </div>
+
+        <div class="row portfolio__list">
+          <!--Project 1-->
+          <div class="portfolio__item" data-category="websites">
+            <div class="portfolio__item-inner outer-shadow">
+              <div class="portfolio__item-img">
+                <img
+                  src="img/beautiful-ballooning-portfolio.png"
+                  alt="project-1"
+                  data-screenshots="img/beautiful-ballooning-portfolio.png"
+                />
+                <p class="portfolio__item-title">Beautiful Ballooning</p>
+                <button class="btn outer-shadow hover-in-shadow">
+                  View Project
+                </button>
+              </div>
+
+              <div class="portfolio__item-details">
+                <div class="row">
+                  <div class="portfolio__description">
+                    <h3>Description:</h3>
+                    <p>
+                      This is one of my latest projects. It combined everything that I learned at that point.
+                      One of the best features is that some items appear on scroll. It also has a lot of other interesting
+                      aspects like the header. The logo changes in width and height on scroll, the color of the total header changes on 
+                      scroll and it shows you where you are thanks to the active links in Javascript. In this project I also learned
+                      how to use Webpack.
+                    </p>
+                  </div>
+                  <div class="portfolio__info">
+                    <h3>Extra Info:</h3>
+                    <ul>
+                      <li>Date- <span>2020</span></li>
+                      <li>
+                        Tools-
+                        <span>Html, CSS, Javascript, Sass, NPM, Webpack</span>
+                      </li>
+                      <li>
+                        URL-
+                        <span
+                          ><a
+                            href="https://anniekdev.github.io/beautiful-ballooning/"
+                            >https://anniekdev.github.io/beautiful-ballooning/</a
+                          ></span
+                        >
+                      </li>
+                      <li>
+                        Sourcecode -
+                        <span
+                          ><a
+                            href="https://github.com/AnniekDev/beautiful-ballooning"
+                            >https://github.com/AnniekDev/beautiful-ballooning</a
+                          ></span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--project 2-->
+          <div class="portfolio__item" data-category="websites">
+            <div class="portfolio__item-inner outer-shadow">
+              <div class="portfolio__item-img">
+                <img
+                  src="img/climbersCampgrounds-portfolio-thumb.png"
+                  alt="project-2"
+                  data-screenshots="img/climbersCampgrounds-portfolio.png"
+                />
+                <p class="portfolio__item-title">Climbers Campgrounds</p>
+                <button class="btn outer-shadow hover-in-shadow">
+                  View Project
+                </button>
+              </div>
+
+              <div class="portfolio__item-details">
+                <div class="row">
+                  <div class="portfolio__description">
+                    <h3>Description:</h3>
+                    <p>
+                      This is a project I mainly made to learn how to use Bootstrap. I found Bootstrap pretty
+                      easy to use and you have your project up and running in a short amount of time. The feature of
+                      Bootstrap I like the most is the grid and how it is fully responsive and mobile first.
+                    </p>
+                  </div>
+                  <div class="portfolio__info">
+                    <h3>Extra Info:</h3>
+                    <ul>
+                      <li>Date- <span>2020</span></li>
+                      <li>
+                        Tools- <span>Html, CSS, Bootstrap - 4</span>
+                      </li>
+                      <li>
+                        URL-
+                        <span
+                          ><a
+                            href="https://anniekdev.github.io/climbersCampgrounds/"
+                            >https://anniekdev.github.io/climbersCampgrounds/</a
+                          ></span
+                        >
+                      </li>
+                      <li>
+                        Sourcecode -
+                        <span
+                          ><a
+                            href="https://github.com/AnniekDev/climbersCampgrounds"
+                            >https://github.com/AnniekDev/climbersCampgrounds</a
+                          ></span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--project 3-->
+          <div class="portfolio__item" data-category="websites">
+            <div class="portfolio__item-inner outer-shadow">
+              <div class="portfolio__item-img">
+                <img
+                  src="img/adventure-bikes-portfolio-thumb.png"
+                  alt="project-3"
+                  data-screenshots="img/adventure-bikes-portfolio.jpg"
+                />
+                <p class="portfolio__item-title">Adventures Bikes</p>
+                <button class="btn outer-shadow hover-in-shadow">
+                  View Project
+                </button>
+              </div>
+
+              <div class="portfolio__item-details">
+                <div class="row">
+                  <div class="portfolio__description">
+                    <h3>Description:</h3>
+                    <p>
+                      This was a really fun project to make! I learned how to use SASS and make animations with Keyframes.
+                      Also took a good look at how to use the BEM method and making my own grid system. I used a lot of CSS in 
+                      this project to get the hang of it.
+                    </p>
+                  </div>
+                  <div class="portfolio__info">
+                    <h3>Extra Info</h3>
+                    <ul>
+                      <li>Date - <span>2020</span></li>
+                      <li>Tools - <span>Html, CSS, Javascript, Sass</span></li>
+                      <li>
+                        URL -
+                        <span
+                          ><a href="https://anniekdev.github.io/project_mtb/"
+                            >https://anniekdev.github.io/project_mtb/</a
+                          ></span
+                        >
+                      </li>
+                      <li>
+                        Sourcecode -
+                        <span
+                          ><a
+                            href="https://github.com/AnniekDev/climbersCampgrounds"
+                            >https://github.com/AnniekDev/project_mtb</a
+                          ></span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--project-4-->
+          <div class="portfolio__item" data-category="Other Projects">
+            <div class="portfolio__item-inner outer-shadow">
+              <div class="portfolio__item-img">
+                <img
+                  src="img/product-display.png"
+                  alt="project-4"
+                  data-screenshots="img/product-display.png"
+                />
+                <p class="portfolio__item-title">Product Display</p>
+                <button class="btn outer-shadow hover-in-shadow">
+                  View Project
+                </button>
+              </div>
+
+              <div class="portfolio__item-details">
+                <div class="row">
+                  <div class="portfolio__description">
+                    <h3>Description:</h3>
+                    <p>
+                      Fun project in which I tried to display products in a stylish way. When you hover over a small camera,
+                      it gets displayed in a large version on your sreen. Backgroundcolors change and have a nice gradient. The 
+                      background behind the camera's also change slightly.
+                    </p>
+                  </div>
+                  <div class="portfolio__info">
+                    <h3>Extra Info</h3>
+                    <ul>
+                      <li>Date - <span>2021</span></li>
+                      <li>Tools - <span>Html, CSS, Javascript</span></li>
+                      <li>
+                        URL -
+                        <span
+                          ><a href="https://anniekdev.github.io/product-display/"
+                            >https://anniekdev.github.io/product-display/</a
+                          ></span
+                        >
+                      </li>
+                      <li>
+                        Sourcecode -
+                        <span
+                          ><a
+                            href="https://github.com/AnniekDev/product-display"
+                            >https://github.com/AnniekDev/product-display</a
+                          ></span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--project-5-->
+          <div class="portfolio__item" data-category="Other Projects">
+            <div class="portfolio__item-inner outer-shadow">
+              <div class="portfolio__item-img">
+                <video controls width="250">
+                  <source
+                    src="img/video/Loaders and Spinners -Bouncers.mp4"
+                    type="video/mp4"
+                  />
+
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+              </div>
+              <p class="portfoloio__item-title">Bouncers</p>
+              <div class="portfolio__item-details">
+                <div class="row">
+                  <div class="portfolio__description">
+                    <h3>Description:</h3>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Expedita saepe iusto est quam, voluptatem dicta accusamus
+                      ut dolore itaque placeat natus nesciunt corrupti, nostrum
+                      odio, dolorem dolorum error tenetur quae.
+                    </p>
+                  </div>
+                  <div class="portfolio__info">
+                    <h3>Extra Info:</h3>
+                    <ul>
+                      <li>Date - <span>2020</span></li>
+                      <li>Tools - <span>Html, CSS</span></li>
+                      <li>
+                        Sourcecode -
+                        <span
+                          ><a
+                            href="https://github.com/AnniekDev/loaders-spinners"
+                            >https://github.com/AnniekDev/loaders-spinners</a
+                          ></span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+  <!--project-6-->
+  <div class="portfolio__item" data-category="Other Projects">
+    <div class="portfolio__item-inner outer-shadow">
+      <div class="portfolio__item-img">
+        <img
+          src="img/glass-project.png"
+          alt="project-6"
+          data-screenshots="img/glass-project.png"
+        />
+        <p class="portfolio__item-title">Glass Project</p>
+        <button class="btn outer-shadow hover-in-shadow">
+          View Project
+        </button>
+      </div>
+
+      <div class="portfolio__item-details">
+        <div class="row">
+          <div class="portfolio__description">
+            <h3>Description:</h3>
+            <p>
+             This is one of the design trends I picked up. How to make it look like parts of your project
+             are made of glass? This is what I tried to find out!
+            </p>
+          </div>
+          <div class="portfolio__info">
+            <h3>Extra Info</h3>
+            <ul>
+              <li>Date - <span>2021</span></li>
+              <li>Tools - <span>Html, CSS</span></li>
+              </li>
+              <li>
+                Sourcecode -
+                <span>
+                  <a href="https://github.com/AnniekDev/glass-project">https://github.com/AnniekDev/glass-project</a></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--project-7-->
+          <div class="portfolio__item" data-category="JS-Projects">
+            <div class="portfolio__item-inner outer-shadow">
+              <div class="portfolio__item-img">
+                <img
+                  src="img/seat-picker.png"
+                  alt="project-7"
+                  data-screenshots="img/seat-picker.png"
+                />
+                <p class="portfolio__item-title">Seat Picker</p>
+                <button class="btn outer-shadow hover-in-shadow">
+                  View Project
+                </button>
+              </div>
+
+              <div class="portfolio__item-details">
+                <div class="row">
+                  <div class="portfolio__description">
+                    <h3>Description:</h3>
+                    <p>
+                      To practice my Javascript, I took on this project. You can only select a seat if it is not already
+                      taken. You can choose different movies with different prices. When you choose another seat, the amount is added
+                      to the total price. Thanks to the local storage it remembers your choises.
+                    </p>
+                  </div>
+                  <div class="portfolio__info">
+                    <h3>Extra Info:</h3>
+                    <ul>
+                      <li>Date - <span>2020</span></li>
+                      <li>Tools - <span>Html, CSS, Javascript</span></li>
+
+                      <li>
+                        Sourcecode -
+                        <span
+                          ><a href="https://github.com/AnniekDev/seat-picker"
+                            >https://github.com/AnniekDev/seat-picker</a
+                          ></span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--project-8-->
+          <div class="portfolio__item" data-category="animations">
+            <div class="portfolio__item-inner outer-shadow">
+              <div class="portfolio__item-img">
+                <video controls width="250">
+                  <source
+                    src="img/video/toggle-light-dark.mp4"
+                    type="video/mp4"
+                  />
+
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+              </div>
+              <p class="portfoloio__item-title">Toggle Light and Dark</p>
+              <div class="portfolio__item-details">
+                <div class="row">
+                  <div class="portfolio__description">
+                    <h3>Description:</h3>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Expedita saepe iusto est quam, voluptatem dicta accusamus
+                      ut dolore itaque placeat natus nesciunt corrupti, nostrum
+                      odio, dolorem dolorum error tenetur quae.
+                    </p>
+                  </div>
+                  <div class="portfolio__info">
+                    <h3>Extra Info:</h3>
+                    <ul>
+                      <li>Date - <span>2020</span></li>
+                      <li>Tools - <span>Html, CSS, Javascript</span></li>
+                      <li>
+                        Sourcecode -
+                        <span
+                          ><a
+                            href="https://github.com/AnniekDev/toggle-light-dark"
+                            >https://github.com/AnniekDev/toggle-light-dark</a
+                          ></span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--project-9-->
+          <div class="portfolio__item" data-category="JS-Projects">
+            <div class="portfolio__item-inner outer-shadow">
+              <div class="portfolio__item-img">
+                <img
+                  src="img/form.png"
+                  alt="project-9"
+                  data-screenshots="img/form.png"
+                />
+                <p class="portfolio__item-title">Form Validation</p>
+                <button class="btn outer-shadow hover-in-shadow">
+                  View Project
+                </button>
+              </div>
+
+              <div class="portfolio__item-details">
+                <div class="row">
+                  <div class="portfolio__description">
+                    <h3>Description:</h3>
+                    <p>
+                     I made a real world validation form. It checks a couple of things before you can submit. It checks
+                     if you have entered a valid email and username. It also checks if the passwords you have entered are matching 
+                     passwords
+                    </p>
+                  </div>
+                  <div class="portfolio__info">
+                    <h3>Extra Info:</h3>
+                    <ul>
+                      <li>Date - <span>2020</span></li>
+                      <li>Tools - <span>Html, CSS, Javascript</span></li>
+
+                      <li>
+                        Sourcecode -
+                        <span
+                          ><a
+                            href="https://github.com/AnniekDev/form-validation"
+                            >https://github.com/AnniekDev/form-validation</a
+                          ></span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--popup-->
+
+    <div class="portfolio__popup portfolio__pp">
+      <div class="portfolio__pp-details">
+        <div class="portfolio__pp-details-inner">
+          <div class="portfolio__pp-details-title">
+            <h2>Beautiful Ballooing</h2>
+            <p>Category - <span class="portfolio__category">Websites</span></p>
+          </div>
+          <div class="portfolio__project-details">
+            <div class="row">
+              <div class="portfolio__description">
+                <h3>Description:</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Expedita saepe iusto est quam, voluptatem dicta accusamus ut
+                  dolore itaque placeat natus nesciunt corrupti, nostrum odio,
+                  dolorem dolorum error tenetur quae.
+                </p>
+              </div>
+              <div class="portfolio__info">
+                <h3>Extra Info:</h3>
+                <ul>
+                  <li>Date - <span>2020</span></li>
+                  <li>Tools - <span>Html, CSS, Javascript, Sass, NPM</span></li>
+                  <li>
+                    URL -
+                    <span
+                      ><a
+                        href="https://anniekdev.github.io/beautiful-ballooning/"
+                        >https://anniekdev.github.io/beautiful-ballooning/</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    Sourcecode -
+                    <span
+                      ><a
+                        href="https://github.com/AnniekDev/beautiful-ballooning"
+                        >https://github.com/AnniekDev/beautiful-ballooning</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="portfolio__pp-main">
+        <div class="portfolio__pp-main-inner">
+          <div
+            class="portfolio__pp-title project-details-btn btn outer-shadow hover-in-shadow"
+          >
+            Project Details<i class="fas fa-plus"></i>
+          </div>
+          <div class="portfolio__pp-close outer-shadow hover-in-shadow">
+            &times;
+          </div>
+          <img
+            src="img/beautiful-ballooning-portfolio.png"
+            alt="img"
+            class="portfolio__pp-img outer-shadow"
+          />
+        </div>
+        <div class="portfolio__pp-loader">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact__title">
+            <h2 data-heading="Contact">Nice to meet you!</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="contact__fly">
+            <i class="far fa-paper-plane"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div class="contact__info outer-shadow">
+            <h3>Feel free to contact me at</h3>
+            <h2>anniek.codes@gmail.com</h2>
+          </div>
+        </div>
+          <div class="row">
+          <div class="contact__icon">
+            <a href="https://github.com/AnniekDev" class="about__social-links outer-shadow hover-in-shadow"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/anniek-bisschop-85775940" class="about__social-links outer-shadow hover-in-shadow"><i class="fab fa-linkedin"></i></a>
+          </div>
+          </div>
+          <div class="row">
+          <p class="contact__copyright-text">&copy; 2021 by Anniek</p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!--<script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="main.js"></script>
+  </body>
+</html>
